@@ -59,8 +59,9 @@ SAVE_LINEAGES = False
 MAX_TIME = 10000  # (hours) how long to wait before autosuspending
 EXTRA_GENS = 0  # extra gens to run when continuing from checkpoint
 
-RUN_DIR = "single_objective_data"  # Subdirectory where results are going to be generated
-RUN_NAME = "SingleObjective"
+
+RUN_DIR = "single_objective_hyperneat_data"  # Subdirectory where results are going to be generated
+RUN_NAME = "SingleObjectiveHyperneat"
 CHECKPOINT_EVERY = 1  # How often to save an snapshot of the execution state to later resume the algorithm
 SAVE_POPULATION_EVERY = 1  # How often (every x generations) we save a snapshot of the evolving population
 
