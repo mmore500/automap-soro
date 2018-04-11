@@ -39,6 +39,7 @@ make installusr
 cd ../voxelyzeMain/
 make
 
+chmod 777 -R /opt
 
 ################################################################################
 # Create directories to enable access to common HPCC mount points
