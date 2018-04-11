@@ -6,5 +6,6 @@ set walltime 4
 set beacon_priority y
 set config_dir /mnt/scratch/mmore500/automap-soro/config/single_objective_hyperneat__configs
 set dest_dir /mnt/scratch/mmore500/automap-soro/data/single_objective_hyperneat__data
+set ppn 16
 
-1001..6000 automap-soro-single-objective-hyperneat singularity run mmore500-automap-soro-master-latest.simg python /opt/automap-soro/make-train-data/single-objective-hyperneat.py $seed
+1001..2000 automap-soro-single-objective-hyperneat singularity run mmore500-automap-soro-master.simg python /opt/automap-soro/make-train-data/single-objective-hyperneat.py $seed
