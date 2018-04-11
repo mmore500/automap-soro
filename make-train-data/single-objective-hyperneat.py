@@ -53,8 +53,8 @@ SIM_TIME = 5  # (seconds), including INIT_TIME!
 INIT_TIME = 1
 DT_FRAC = 0.9  # Fraction of the optimal integration step. The lower, the more stable (and slower) the simulation.
 
-TIME_TO_TRY_AGAIN = 30  # (seconds) wait this long before assuming simulation crashed and resending
-MAX_EVAL_TIME = 60  # (seconds) wait this long before giving up on evaluating this individual
+TIME_TO_TRY_AGAIN = 90  # (seconds) wait this long before assuming simulation crashed and resending
+MAX_EVAL_TIME = 270  # (seconds) wait this long before giving up on evaluating this individual
 SAVE_LINEAGES = False
 MAX_TIME = 10000  # (hours) how long to wait before autosuspending
 EXTRA_GENS = 0  # extra gens to run when continuing from checkpoint
