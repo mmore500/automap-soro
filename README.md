@@ -1,5 +1,7 @@
 # automap-soro
 
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/894)
+
 This project is based on AutoMap, a pair of methods for automatic generation of evolvable genotype-phenotype mappings.
 Both use an artificial neural network autoencoder trained on phenotypes harvested from fitness peaks as the basis for a genotype-phenotype mapping.
 In the first, the decoder segment of a bottlenecked autoencoder serves as the genotype-phenotype mapping.
