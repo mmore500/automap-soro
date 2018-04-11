@@ -30,7 +30,8 @@ import sys
 assert len(sys.argv) == 2, "Expected argument: seed value"
 
 # Appending repo's root dir in the python path to enable subsequent imports
-sys.path.append(os.getcwd() + "/evosoro")
+sys.path.append(os.getcwd() + "/../evosoro")
+sys.path.append("/opt/evosoro")
 
 from evosoro.base import Sim, Env, ObjectiveDict
 from evosoro.networks import CPPN
@@ -42,7 +43,10 @@ from evosoro.tools.checkpointing import continue_from_checkpoint
 
 VOXELYZE_VERSION = '_voxcad'
 # sub.call("rm ./voxelyze", shell=True)
-sub.call("cp evosoro/evosoro/" + VOXELYZE_VERSION + "/voxelyzeMain/voxelyze .", shell=True)  # Making sure to have the most up-to-date version of the Voxelyze physics engine
+if (os.path.isdir("/opt/evosoro")):
+    sub.call("cp /opt/evosoro/evosoro/" + VOXELYZE_VERSION + "/voxelyzeMain/voxelyze .", shell=True)  # Making sure to have the most up-to-date version of the Voxelyze physics engine
+else:
+    sub.call("cp ../evosoro/evosoro/" + VOXELYZE_VERSION + "/voxelyzeMain/voxelyze .", shell=True)  # Making sure to have the most up-to-date version of the Voxelyze physics engine
 
 
 NUM_RANDOM_INDS = 0  # Number of random individuals to insert each generation
